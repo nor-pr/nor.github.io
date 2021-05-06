@@ -1,0 +1,38 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript/sketch.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+<body>
+
+    <!-- ここに、webにどう表示させるか書き込む -->
+    <h1>Service Design Database</h1>
+    <div id="data_view">
+
+        <!-- ボタン なんか反対になっちゃったから後々直す必要あり-->
+
+        <div id="back_button" onclick="modoru()">＜back</div>
+        <div id="next_button" onclick="susumu()">next＞</div>
+
+        <!-- データの中身 -->
+        <div class="contents">
+            <p id="Record_number">レコードナンバー</p>
+            <!-- <img src="http://drive.google.com/uc?export=view&id=1h1OhrHobH_d5Y5ba2a33Qn0CMfg1jBMU"> -->
+            <div class="image_view">
+                <img src="" id="img" width="100%">
+            </div>
+            <div class="uncho">
+                <p id="Day">登録日</p>
+                <p id="Spot">撮影場所</p>
